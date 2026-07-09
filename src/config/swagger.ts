@@ -12,10 +12,10 @@ const options: swaggerJsdoc.Options = {
     },
     servers: [
       {
-        url: "http://localhost:3000",
-      },
-      {
-        url: "https://customer-reengagement-ai.onrender.com",
+        url:
+          process.env.NODE_ENV === "production"
+            ? "https://customer-reengagement-ai.onrender.com"
+            : "http://localhost:3000",
       },
     ],
   },
