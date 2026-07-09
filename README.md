@@ -37,7 +37,8 @@ Customer Data → Retention Analysis → Segmentation → Gemini AI Campaign Gen
 
 ## Deployment
 
-Live API: `<YOUR_RENDER_URL>`
+Live API: https://customer-reengagement-ai.onrender.com
+Swagger: https://customer-reengagement-ai.onrender.com/api-docs
 
 ## Future Improvements
 
