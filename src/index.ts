@@ -10,6 +10,18 @@ const app = express();
 app.use(express.json());
 
 const PORT = 3000;
+app.get("/", (_req, res) => {
+  res.status(200).json({
+    project: "Customer Re-engagement AI Platform",
+    status: "Running",
+    description:
+      "AI-powered platform for customer retention, segmentation, and personalized campaign generation.",
+    endpoints: {
+      health: "/health",
+      customers: "/customers",
+    },
+  });
+});
 
 // Health Check Route
 app.get("/health", (_req, res) => {
